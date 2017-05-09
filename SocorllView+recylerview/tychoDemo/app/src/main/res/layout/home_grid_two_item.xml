@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:id="@+id/home_grid_two_layout"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:scaleType="fitXY"
+        android:id="@+id/home_grid_two_img"
+        android:src="@mipmap/found_one"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="休闲娱乐"
+            android:id="@+id/home_grid_two_name"
+            android:textSize="@dimen/sp_10"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="休闲娱乐"
+            android:textColor="@color/red"
+            android:id="@+id/home_grid_two_price"
+            android:textSize="@dimen/sp_10"/>
+    </LinearLayout>
+
+
+</LinearLayout>

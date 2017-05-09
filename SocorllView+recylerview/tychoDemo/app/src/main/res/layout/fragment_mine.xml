@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/toolbar_color"
+        android:navigationIcon="@null"
+        >
+        <TextView
+            android:id="@+id/base_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/mine_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@mipmap/name_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/tx"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"
+                    android:textSize="@dimen/sp_25"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"/>
+                <ImageView style="@style/tx_arrow"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/mine_padding_view"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <LinearLayout style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:id="@+id/real_name"
+                        android:drawableLeft="@mipmap/tb1"
+                        android:text="@string/mine_tb1" />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:drawableLeft="@mipmap/tb2"
+                        android:text="@string/mine_tb2" />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:drawableLeft="@mipmap/tb3"
+                        android:text="@string/mine_tb3" />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:drawableLeft="@mipmap/tb4"
+                        android:text="@string/mine_tb4" />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/mine_padding_view"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:drawableLeft="@mipmap/tb5"
+                        android:text="@string/mine_tb5" />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+                <View style="@style/bg_line"/>
+                <LinearLayout style="@style/mid_layout">
+                    <TextView style="@style/usertext"
+                        android:drawableLeft="@mipmap/tb6"
+                        android:text="@string/mine_tb6" />
+                    <ImageView style="@style/img_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/mine_padding_view"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/toolbar_color"
+        android:navigationIcon="@null"
+        >
+        <TextView
+            android:id="@+id/base_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/classify_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+       style="@style/WmHwParent"
+        android:background="@color/found_food_bg">
+        <TextView
+            android:paddingTop="@dimen/dp_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/found_food"
+            android:textSize="@dimen/sp_18"
+            android:drawableLeft="@mipmap/found_food"
+            android:paddingLeft="@dimen/dp_4"
+            android:drawablePadding="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_4"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/classify_recyclerView"
+            android:layout_height="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

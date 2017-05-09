@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"  parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WmHwParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!--waitDialog样式-->
+    <style name="loadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item><!--设置dialog的背景-->
+        <item name="android:windowFrame">@null</item><!--Dialog的windowFrame框为无-->
+        <item name="android:windowNoTitle">true</item><!--是否显示title-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--是否半透明-->
+        <item name="android:windowContentOverlay">@null</item><!--是否半透明-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!-- 对话框是否有遮盖 -->
+        <item name="android:backgroundDimEnabled">false</item><!--背景是否模糊显示-->
+        <item name="android:backgroundDimAmount">0.6</item><!--背景的灰度-->
+    </style>
+    <!-- login AutoCompleteTextView theme. -->
+    <style name="myAutoCompleteTextViewStyle" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@color/blue</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:dropDownVerticalOffset">@dimen/dp_1</item>
+    </style>
+    <!-- 共用层样式 -->
+    <style name="base_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!--无圆角样式  -->
+    <style name="mid_layout" parent="base_layout">
+        <item name="android:background">@drawable/no_fillet_selector</item>
+    </style>
+    <!-- 文本右边箭头样式 -->
+    <style name="img_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/setting_arrow</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+    </style>
+    <!-- 文本右边箭头样式 -->
+    <style name="tx_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/tx_arrow</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+    </style>
+    <!-- view分割线样式 -->
+    <style name="bg_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/border_clo</item>
+    </style>
+    <!-- textview样式 -->
+    <style name="usertext">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/text_clo</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/dp_8</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="SmallGreyTextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+</resources>
